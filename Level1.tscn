@@ -1,9 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://ds7ivplnye822"]
+[gd_scene load_steps=5 format=3 uid="uid://ds7ivplnye822"]
 
 [ext_resource type="PackedScene" uid="uid://cgq4mbyuqilh" path="res://Player.tscn" id="1"]
 [ext_resource type="PackedScene" uid="uid://dkhwgagbr1a8n" path="res://SwitchableObject.tscn" id="2"]
 [ext_resource type="Script" uid="uid://b24fa40j6nk7w" path="res://Player.cs" id="2_dwyiq"]
-[ext_resource type="Script" uid="uid://dxtwnri5j3oo2" path="res://DimensionGroup.cs" id="3_cove1"]
 
 [sub_resource type="RectangleShape2D" id="1"]
 size = Vector2(800, 32)
@@ -26,4 +25,3 @@ script = ExtResource("2_dwyiq")
 
 [node name="House" parent="." instance=ExtResource("2")]
 position = Vector2(400, 336)
-script = ExtResource("3_cove1")
