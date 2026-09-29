@@ -2,8 +2,6 @@
 
 [ext_resource type="PackedScene" uid="uid://cgq4mbyuqilh" path="res://Player.tscn" id="1"]
 [ext_resource type="Texture2D" uid="uid://caqsqew43q5da" path="res://content.png" id="1_dwyiq"]
-[ext_resource type="PackedScene" uid="uid://dkhwgagbr1a8n" path="res://SwitchableObject.tscn" id="2"]
-[ext_resource type="Script" uid="uid://b24fa40j6nk7w" path="res://Player.cs" id="2_dwyiq"]
 
 [sub_resource type="RectangleShape2D" id="1"]
 size = Vector2(800, 32)
@@ -6068,7 +6066,6 @@ zoom = Vector2(0.7, 0.7)
 
 [node name="Player" parent="." unique_id=139345962 instance=ExtResource("1")]
 position = Vector2(100, 350)
-script = ExtResource("2_dwyiq")
 
-[node name="House" parent="." unique_id=304045785 instance=ExtResource("2")]
+[node name="House" parent="." unique_id=304045785]
 position = Vector2(400, 336)
