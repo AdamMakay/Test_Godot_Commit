@@ -24,3 +24,14 @@ zoom = Vector2(0.7, 0.7)
 [node name="Player" parent="." unique_id=631383033 instance=ExtResource("1")]
 position = Vector2(100, 350)
 script = ExtResource("2_dwyiq")
+[node name="Level1" type="Node2D" unique_id=1167315260]
+
+[node name="Ground" type="StaticBody2D" parent="." unique_id=1293255503]
+position = Vector2(400, 400)
+
+[node name="Polygon2D" type="Polygon2D" parent="Ground" unique_id=1420920224]
+color = Color(0.5, 0.35, 0.2, 1)
+polygon = PackedVector2Array(-400, -16, 400, -16, 400, 16, -400, 16)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ground" unique_id=914077782]
+shape = SubResource("1")

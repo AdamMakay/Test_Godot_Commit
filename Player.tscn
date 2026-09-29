@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://cgq4mbyuqilh"]
 
+[gd_scene format=3 uid="uid://cgq4mbyuqilh"]
+
 [sub_resource type="RectangleShape2D" id="1"]
 size = Vector2(32, 32)
 
