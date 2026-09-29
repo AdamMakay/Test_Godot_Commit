@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://cgq4mbyuqilh"]
+
+[sub_resource type="RectangleShape2D" id="1"]
+size = Vector2(32, 32)
+
+[node name="Player" type="CharacterBody2D" unique_id=179073862]
+rotation = 0.008003316
+
+[node name="Polygon2D" type="Polygon2D" parent="." unique_id=159695395]
+color = Color(0.2, 0.6, 1, 1)
+polygon = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1176606023]
+shape = SubResource("1")
