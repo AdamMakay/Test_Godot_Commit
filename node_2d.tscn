@@ -1,3 +1,29 @@
 [gd_scene format=3 uid="uid://b7mmj2e4sr4gj"]
 
-[node name="Node2D" type="Node2D" unique_id=1762272011]
+[ext_resource type="Script" uid="uid://bke7bb1m150sk" path="res://CharacterBody2d.cs" id="1_wtcfe"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m0isx"]
+size = Vector2(58.5, 44)
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_m0isx"]
+
+[node name="Game" type="Node2D" unique_id=1762272011]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1870313550]
+script = ExtResource("1_wtcfe")
+
+[node name="Polygon2D" type="Polygon2D" parent="CharacterBody2D" unique_id=601120357]
+position = Vector2(618, 246)
+color = Color(0, 0, 0, 1)
+polygon = PackedVector2Array(-360, -32, -299, -34, -299, 14, -357, 13)
+uv = PackedVector2Array(-360, -32, -299, -34, -299, 14, -357, 13)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1620777124]
+position = Vector2(290, 237)
+shape = SubResource("RectangleShape2D_m0isx")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=231052432]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=764818536]
+position = Vector2(298, 415)
+shape = SubResource("WorldBoundaryShape2D_m0isx")
