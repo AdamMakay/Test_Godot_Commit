@@ -1,29 +1,11 @@
 [gd_scene format=3 uid="uid://ds7ivplnye822"]
 
-[ext_resource type="PackedScene" uid="uid://cgq4mbyuqilh" path="res://Player.tscn" id="1"]
-[ext_resource type="Script" uid="uid://b24fa40j6nk7w" path="res://Player.cs" id="2_dwyiq"]
-
 [sub_resource type="RectangleShape2D" id="1"]
 size = Vector2(800, 32)
 
-[node name="Level1" type="Node2D" unique_id=946571814]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m0isx"]
+size = Vector2(58, 54)
 
-[node name="Ground" type="StaticBody2D" parent="." unique_id=1273826983]
-position = Vector2(400, 400)
-
-[node name="Polygon2D" type="Polygon2D" parent="Ground" unique_id=1952140956]
-color = Color(0.5, 0.35, 0.2, 1)
-polygon = PackedVector2Array(-400, -16, 400, -16, 400, 16, -400, 16)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Ground" unique_id=1485225900]
-shape = SubResource("1")
-
-[node name="Camera2D" type="Camera2D" parent="Ground" unique_id=1649009746]
-zoom = Vector2(0.7, 0.7)
-
-[node name="Player" parent="." unique_id=631383033 instance=ExtResource("1")]
-position = Vector2(100, 350)
-script = ExtResource("2_dwyiq")
 [node name="Level1" type="Node2D" unique_id=1167315260]
 
 [node name="Ground" type="StaticBody2D" parent="." unique_id=1293255503]
@@ -35,3 +17,18 @@ polygon = PackedVector2Array(-400, -16, 400, -16, 400, 16, -400, 16)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Ground" unique_id=914077782]
 shape = SubResource("1")
+
+[node name="Camera2D" type="Camera2D" parent="Ground" unique_id=1649009746]
+zoom = Vector2(0.7, 0.7)
+
+[node name="Player" type="Node2D" parent="." unique_id=516659327]
+
+[node name="Polygon2D" type="Polygon2D" parent="Player" unique_id=1030652756]
+position = Vector2(352, 377)
+color = Color(0, 0, 0, 1)
+polygon = PackedVector2Array(-304, -56, -262, -55, -262, -14, -308, -11)
+uv = PackedVector2Array(-304, -56, -262, -55, -262, -14, -308, -11)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player/Polygon2D" unique_id=2047300492]
+position = Vector2(-292, -34)
+shape = SubResource("RectangleShape2D_m0isx")
