@@ -15,7 +15,7 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 [application]
 
 config/name="IKT"
-run/main_scene="res://Level1.tscn"
+run/main_scene="uid://b7mmj2e4sr4gj"
 config/features=PackedStringArray("4.7", "C#", "Forward Plus")
 config/icon="res://icon.svg"
 
