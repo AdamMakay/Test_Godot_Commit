@@ -1,0 +1,23 @@
+# Godot
+.godot/
+android/
+.import/
+export/
+build/
+*.tmp
+
+# .NET / Visual Studio
+.vs/
+bin/
+obj/
+
+# IDE
+.idea/
+
+# User-specific
+*.user
+*.userprefs
+
+# Backup
+*.csproj.old
+*.sln.old
