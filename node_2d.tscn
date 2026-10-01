@@ -390,7 +390,8 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_1vivr"]
-height = 48.0
+radius = 15.0
+height = 56.0
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_m0isx"]
 
@@ -6432,7 +6433,15 @@ texture = ExtResource("2_0e48y")
 [sub_resource type="TileSet" id="TileSet_m0isx"]
 sources/0 = SubResource("TileSetAtlasSource_epypp")
 
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_xobdw"]
+a = Vector2(1, -922)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_5gsmu"]
+a = Vector2(1245.4055, -231.06552)
+b = Vector2(1241, 715)
+
 [node name="Game" type="Node2D" unique_id=1762272011]
+position = Vector2(34, -15)
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1870313550]
 script = ExtResource("1_wtcfe")
@@ -6443,7 +6452,7 @@ animation = &"attack"
 frame_progress = 0.96720713
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=943699551]
-position = Vector2(1, 9)
+position = Vector2(0, 11)
 shape = SubResource("CapsuleShape2D_1vivr")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=231052432]
@@ -6461,3 +6470,17 @@ layer_0/tile_data = PackedInt32Array(-327688, 1179648, 17, -262152, 1179648, 18,
 [node name="Camera2D" type="Camera2D" parent="TileMap" unique_id=1945559619]
 position = Vector2(418, 97)
 zoom = Vector2(0.7, 0.7)
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="." unique_id=813718432]
+position = Vector2(-66, 406)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2" unique_id=1576587570]
+position = Vector2(-340, 147)
+shape = SubResource("SegmentShape2D_xobdw")
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="." unique_id=1750421540]
+position = Vector2(1, 23)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3" unique_id=82258949]
+position = Vector2(-1.4055176, -156.93448)
+shape = SubResource("SegmentShape2D_5gsmu")
