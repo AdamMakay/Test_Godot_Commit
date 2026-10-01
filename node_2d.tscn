@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://b7mmj2e4sr4gj"]
 
 [ext_resource type="Script" uid="uid://bke7bb1m150sk" path="res://CharacterBody2d.cs" id="1_wtcfe"]
+[ext_resource type="Texture2D" uid="uid://caqsqew43q5da" path="res://content.png" id="2_0e48y"]
 [ext_resource type="Texture2D" uid="uid://cl8c1xmkmgdrp" path="res://animációk/Attacks.png" id="2_d21ai"]
 [ext_resource type="Texture2D" uid="uid://c86eioflbiw0w" path="res://animációk/Death.png" id="3_rj586"]
 [ext_resource type="Texture2D" uid="uid://bhv0v4xq5rfr0" path="res://animációk/Idle.png" id="4_4d7sh"]
