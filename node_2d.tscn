@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://bu8aswoservvs" path="res://animációk/Jump.png" id="5_ir8iy"]
 [ext_resource type="Texture2D" uid="uid://dfse1sc1bxnws" path="res://animációk/Roll.png" id="6_hqns4"]
 [ext_resource type="Texture2D" uid="uid://fyarpqfv8u6p" path="res://animációk/Run.png" id="7_x0ka3"]
+[ext_resource type="Script" uid="uid://ujhq2oc21lsx" path="res://EnemySpawner.cs" id="10_ir8iy"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0h7mo"]
 atlas = ExtResource("2_d21ai")
@@ -6484,3 +6485,10 @@ position = Vector2(1, 23)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3" unique_id=82258949]
 position = Vector2(-1.4055176, -156.93448)
 shape = SubResource("SegmentShape2D_5gsmu")
+
+[node name="EnemySpawner" type="Node2D" parent="." unique_id=1114227009]
+script = ExtResource("10_ir8iy")
+
+[node name="RightSpawn" type="Marker2D" parent="EnemySpawner" unique_id=1779007344]
+
+[node name="LeftSpawn" type="Marker2D" parent="EnemySpawner" unique_id=1666705129]
