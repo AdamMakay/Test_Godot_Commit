@@ -10,7 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://dfse1sc1bxnws" path="res://animációk/Roll.png" id="6_hqns4"]
 [ext_resource type="Texture2D" uid="uid://fyarpqfv8u6p" path="res://animációk/Run.png" id="7_x0ka3"]
 [ext_resource type="Script" uid="uid://ujhq2oc21lsx" path="res://EnemySpawner.cs" id="10_ir8iy"]
-[ext_resource type="PackedScene" uid="uid://chtkmhcr4qcdo" path="res://character_body_2d.tscn" id="11_hqns4"]
+[ext_resource type="PackedScene" uid="uid://chtkmhcr4qcdo" path="res://Enemy.tscn" id="11_hqns4"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0h7mo"]
 atlas = ExtResource("2_d21ai")
@@ -6445,7 +6445,7 @@ b = Vector2(1241, 715)
 [node name="Game" type="Node2D" unique_id=1762272011]
 position = Vector2(34, -15)
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1870313550]
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1870313550 groups=["player"]]
 script = ExtResource("1_wtcfe")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=662373771]

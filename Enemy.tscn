@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://chtkmhcr4qcdo"]
 
+[ext_resource type="Script" uid="uid://bxslvac4y21mk" path="res://Enemy.cs" id="1_2hac7"]
 [ext_resource type="Texture2D" uid="uid://bxu06f7d5xnrd" path="res://animációk/SkeletonKnight_notbad/RELEASE/WALK.png" id="1_f50pn"]
 [ext_resource type="Texture2D" uid="uid://b4v71b5q7hfu4" path="res://animációk/SkeletonKnight_notbad/RELEASE/DOWN_SWING.png" id="1_ij6vw"]
 
@@ -132,8 +133,9 @@ animations = [{
 radius = 26.0
 height = 66.0
 
-[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1966488686]
+[node name="Enemy" type="CharacterBody2D" unique_id=1966488686]
 position = Vector2(12, -20)
+script = ExtResource("1_2hac7")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1058046205]
 position = Vector2(31, -26)
