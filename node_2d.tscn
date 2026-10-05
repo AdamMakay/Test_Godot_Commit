@@ -28,6 +28,22 @@ region = Rect2(256, 0, 128, 64)
 atlas = ExtResource("2_d21ai")
 region = Rect2(384, 0, 128, 64)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_ma08v"]
+atlas = ExtResource("2_d21ai")
+region = Rect2(512, 0, 128, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s32dh"]
+atlas = ExtResource("2_d21ai")
+region = Rect2(640, 0, 128, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_037st"]
+atlas = ExtResource("2_d21ai")
+region = Rect2(768, 0, 128, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6orn5"]
+atlas = ExtResource("2_d21ai")
+region = Rect2(896, 0, 128, 64)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_rj586"]
 atlas = ExtResource("2_d21ai")
 region = Rect2(512, 0, 128, 64)
@@ -218,10 +234,22 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_ta5nu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ma08v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s32dh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_037st")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6orn5")
 }],
 "loop": 1,
 "name": &"attack",
-"speed": 5.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -253,7 +281,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_fs4d3")
 }],
-"loop": 1,
+"loop": 0,
 "name": &"death",
 "speed": 8.0
 }, {
@@ -6450,8 +6478,7 @@ script = ExtResource("1_wtcfe")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=662373771]
 sprite_frames = SubResource("SpriteFrames_1vivr")
-animation = &"attack"
-frame_progress = 0.21925828
+animation = &"death"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=943699551]
 position = Vector2(0, 11)
@@ -6472,6 +6499,12 @@ layer_0/tile_data = PackedInt32Array(-327688, 1179648, 17, -262152, 1179648, 18,
 [node name="Camera2D" type="Camera2D" parent="TileMap" unique_id=1945559619]
 position = Vector2(418, 97)
 zoom = Vector2(0.7, 0.7)
+
+[node name="TimerLabel" type="Label" parent="TileMap" unique_id=2017498630]
+offset_left = -361.0
+offset_top = -292.0
+offset_right = -187.0
+offset_bottom = -221.0
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="." unique_id=813718432]
 position = Vector2(-66, 406)
